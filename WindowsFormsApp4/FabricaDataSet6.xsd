@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FabricaDataSet6" targetNamespace="http://tempuri.org/FabricaDataSet6.xsd" xmlns:mstns="http://tempuri.org/FabricaDataSet6.xsd" xmlns="http://tempuri.org/FabricaDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FabricaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FabricaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp4.Properties.Settings.GlobalReference.Default.FabricaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ScladTcaniTableAdapter" GeneratorDataComponentClassName="ScladTcaniTableAdapter" Name="ScladTcani" UserDataComponentName="ScladTcaniTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FabricaConnectionString (Settings)" DbObjectName="Fabrica.dbo.ScladTcani" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Rulon FROM dbo.ScladTcani</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Rulon" DataSetColumn="Rulon" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FabricaDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FabricaDataSet6" msprop:Generator_UserDSName="FabricaDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ScladTcani" msprop:Generator_TableClassName="ScladTcaniDataTable" msprop:Generator_TableVarName="tableScladTcani" msprop:Generator_TablePropName="ScladTcani" msprop:Generator_RowDeletingName="ScladTcaniRowDeleting" msprop:Generator_RowChangingName="ScladTcaniRowChanging" msprop:Generator_RowEvHandlerName="ScladTcaniRowChangeEventHandler" msprop:Generator_RowDeletedName="ScladTcaniRowDeleted" msprop:Generator_UserTableName="ScladTcani" msprop:Generator_RowChangedName="ScladTcaniRowChanged" msprop:Generator_RowEvArgName="ScladTcaniRowChangeEvent" msprop:Generator_RowClassName="ScladTcaniRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Rulon" msprop:Generator_ColumnVarNameInTable="columnRulon" msprop:Generator_ColumnPropNameInRow="Rulon" msprop:Generator_ColumnPropNameInTable="RulonColumn" msprop:Generator_UserColumnName="Rulon">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
